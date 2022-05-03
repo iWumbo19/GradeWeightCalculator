@@ -15,9 +15,10 @@ Assignment::Assignment()
     Assignment::weight = 0;
 }
 
-int Assignment::get_weightedgrade()
+double Assignment::get_weightedgrade()
 {
-    return grade * (weight / 100);
+    double percent = Assignment::weight / 100;
+    return Assignment::grade * percent;
 }
 
 string Assignment::get_coursename()
