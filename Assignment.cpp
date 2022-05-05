@@ -15,9 +15,9 @@ Assignment::Assignment()
     Assignment::weight = 0;
 }
 
-double Assignment::get_weightedgrade()
+float Assignment::get_weightedgrade()
 {
-    double percent = Assignment::weight / 100;
+    float percent = Assignment::weight / 100;
     return Assignment::grade * percent;
 }
 

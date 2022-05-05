@@ -2,7 +2,7 @@
 
 int Course::get_total_weighted_grade()
 {
-	int output = 0;
+	float output = 0;
 	for (Assignment assignment : assignments)
 	{
 		output += assignment.get_weightedgrade();

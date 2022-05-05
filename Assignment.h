@@ -5,14 +5,14 @@ using namespace std;
 class Assignment
 {
 	string name;
-	int grade;
-	int weight;
+	float grade;
+	float weight;
 
 public:
 	Assignment(int grade, int weight, string name);
 	Assignment();
 
-	double get_weightedgrade();
+	float get_weightedgrade();
 	string get_coursename();
 	int get_weight();
 	int get_grade();
